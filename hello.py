@@ -1,4 +1,7 @@
-# F strings
+# Ch 1 - 3
+print('\n------ Ch 1 - 3 -------\n')
+
+# F strings. Basically string interpolation.
 first_name = "ada"
 last_name = "lovelace"
 full_name = f"{first_name} {last_name}"
@@ -34,4 +37,9 @@ print(sorted(cars)) # does not mutate original array
 print(cars) # does not mutate original array
 print(len(cars))
 
-#start from Avoiding Index Errors in ch3
+# Ch 4: Working With Lists
+print('\n------ Ch 4 -------\n')
+
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(f'{magician.title()}, that was a great trick!')
