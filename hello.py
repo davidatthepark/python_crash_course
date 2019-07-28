@@ -34,4 +34,5 @@ print(sorted(cars)) # does not mutate original array
 print(cars) # does not mutate original array
 print(len(cars))
 
+
 #start from Avoiding Index Errors in ch3
