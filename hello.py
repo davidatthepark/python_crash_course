@@ -43,3 +43,8 @@ print('\n------ Ch 4 -------\n')
 magicians = ['alice', 'david', 'carolina']
 for magician in magicians:
     print(f'{magician.title()}, that was a great trick!')
+
+for number in range(1, 21):
+    print(number)
+
+# start from try it yourself
