@@ -47,4 +47,17 @@ for magician in magicians:
 for number in range(1, 21):
     print(number)
 
-# start from try it yourself
+million_numbers = range(1, 1_000_001)
+#for number in million_numbers:
+#    print(number)
+
+print(sum(million_numbers))
+
+odd_numbers = range(1, 21, 2)
+for number in odd_numbers:
+    print(number)
+
+for number in range(1, 11):
+    print(number**3)
+
+print([value**3 for value in range(1, 11)])
