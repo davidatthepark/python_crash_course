@@ -61,3 +61,19 @@ for number in range(1, 11):
     print(number**3)
 
 print([value**3 for value in range(1, 11)])
+
+# Working with part of a list
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+# Same as JS slice. Can omit the first and/or last index.
+print(players[0:3]) 
+print(players[-2:])
+print('\n')
+print('Here are the first three players on my team:')
+for player in players[:3]:
+    print(player.title())
+
+# Tuples - Immutable list
+print('\nTuples')
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
