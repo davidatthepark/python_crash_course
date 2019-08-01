@@ -77,3 +77,11 @@ print('\nTuples')
 dimensions = (200, 50)
 print(dimensions[0])
 print(dimensions[1])
+
+print('\n')
+requested_toppings = []
+if requested_toppings:
+    for topping in requested_toppings:
+        print(f'Requested {topping}')
+else:
+    print("Are you sure you want no toppings?")
