@@ -85,3 +85,24 @@ if requested_toppings:
         print(f'Requested {topping}')
 else:
     print("Are you sure you want no toppings?")
+
+# Dictionaries - Basically JS objects
+print('\n')
+alien_0 = {'color': 'green', 'job': 'alien', 'weapon': 'banana'}
+print(alien_0['color'])
+# Use get when the key might not exist
+print(alien_0.get('height', 'no such value')) 
+
+for k, v in alien_0.items():
+    print(f"\nKey: {k}")
+    print(f"Value: {v}")
+
+# Can wrap these dictionaries in methods like sorted or set.
+for key in alien_0.keys():
+    print(f'{key}')
+
+# 8-7
+def make_album(artist_name, album_title):
+    return {
+        
+    }
