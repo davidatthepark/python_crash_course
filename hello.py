@@ -1,7 +1,7 @@
-# Ch 1 - 3
-print('\n------ Ch 1 - 3 -------\n')
+# Ch 1 - 2
+print('\n------ Ch 1 - 2 -------\n')
 
-# F strings. Basically string interpolation.
+## F strings. Basically string interpolation.
 first_name = "ada"
 last_name = "lovelace"
 full_name = f"{first_name} {last_name}"
@@ -10,7 +10,7 @@ message = f"Hello, {full_name.title()}!"
 print(message)
 print("{} {}".format(first_name, last_name).title())
 
-# Whitespace, tabs, newlines
+## Whitespace, tabs, newlines
 print("\tPython")
 print("Languages:\nPython\nC\nJavaScript")
 print("Languages:\n\tPython\n\tC\n\tJavaScript")
@@ -90,19 +90,36 @@ else:
 print('\n')
 alien_0 = {'color': 'green', 'job': 'alien', 'weapon': 'banana'}
 print(alien_0['color'])
-# Use get when the key might not exist
+## Use get when the key might not exist
 print(alien_0.get('height', 'no such value')) 
 
 for k, v in alien_0.items():
     print(f"\nKey: {k}")
     print(f"Value: {v}")
 
-# Can wrap these dictionaries in methods like sorted or set.
+## Can wrap these dictionaries in methods like sorted or set.
 for key in alien_0.keys():
     print(f'{key}')
 
-# 8-7
-def make_album(artist_name, album_title):
-    return {
-        
-    }
+# Functions
+## Passing an arbitrary number of arguments:
+def make_pizza(*toppings): # Asterisk creates a tuple
+    """"Print the list of toppings that have been requested."""
+    print(toppings)
+
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+## Using arbitrary keyword arguments
+## Double asterisk creates a dictionary
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user"""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+user_profile = build_profile('albert', 'einstein',
+                            location='princeton',
+                            field='physics')
+
+print(user_profile)
